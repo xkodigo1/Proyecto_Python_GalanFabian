@@ -20,32 +20,34 @@ def menuP():
         }
         input("Usuario registrado con éxito. Presiona Enter para continuar --> ")
         os.system("cls")
+        # vicConsUser = 0
+        # vicConsEnv = 0
         while True:
             if cntdr["rnds_gu"] < 3 and cntdr["rnds_ge"] < 3:
-                user = input("---------------------------------\nElige una opción:\n--> Piedra\n--> Papel\n--> Tijeras\n---------------------------------\n").capitalize()
-                opc = ["Piedra","Papel","Tijeras"]
+                user = input("---------------------------------\nElige una opción:\n--> Piedra\n--> Papel\n--> Tijeras\n---------------------------------\n").upper()
+                opc = ["PIEDRA","PAPEL","TIJERAS"]
                 env = random.choice(opc)
-                if user == "Piedra" and env == "Tijeras":
+                if user == "PIEDRA" and env == "TIJERAS":
                     cntdr["rnds_gu"] += 1
                     print(f"¡{user} aplasta {env}! ¡Lo hiciste genial, esta ronda es tuya!\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
-                elif user == "Papel" and env == "Piedra":
+                elif user == "PAPEL" and env == "PIEDRA":
                     cntdr["rnds_gu"] += 1
                     print(f"¡{user} envuelve {env}! ¡Muy bien, esta vez ganaste tú!\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
-                elif user == "Tijera" and env == "Papel":
+                elif user == "TIJERAS" and env == "PAPEL":
                     cntdr["rnds_gu"] += 1
                     print(f"¡{user} corta {env}! ¡Buena jugada, te llevas la victoria!\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
-                elif env == "Piedra" and user == "Tijeras":
+                elif env == "PIEDRA" and user == "TIJERAS":
+                    cntdr["rnds_ge"] += 1
                     print(f"¡{env} aplasta {user}! Esta vez no fue la tuya, ¡pero la próxima seguro lo es!\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
+                elif env == "PAPEL" and user == "PIEDRA":
                     cntdr["rnds_ge"] += 1
-                elif env == "Papel" and user == "Piedra":
                     print(f"¡{env} envuelve {user}! Has perdido esta vez.\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
+                elif env == "TIJERAS" and user == "PAPEL":
                     cntdr["rnds_ge"] += 1
-                elif env == "Tijera" and user == "Papel":
                     print(f"¡{env} corta {user}! No te preocupes, ¡a la siguiente lo conseguirás!\nMARCADOR: {cntdr["rnds_gu"]} - {cntdr["rnds_ge"]}")
-                    cntdr["rnds_ge"] += 1
                 elif user == env:
                     print("¡Empate! Ambos elegimos lo mismo. ¡Parece que están en sintonía! ¿Vamos de nuevo?")
-                elif user != opc:
+                elif user not in opc:
                     input("Elección no válida. Presiona Enter para regresar --> ")
             else: 
                 print(f"{users["name"]} es el ganador" if cntdr["rnds_gu"] > cntdr["rnds_ge"] else "Entorno es el ganador")
