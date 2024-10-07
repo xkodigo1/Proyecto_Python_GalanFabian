@@ -31,7 +31,6 @@ def menuP():
         vicConsEnv = 0
         while True:
             if cntdr_pve['rnds_gu'] < 3 and cntdr_pve['rnds_ge'] < 3:
-                opc = ["PIEDRA","PAPEL","TIJERAS"]
                 env = random.choice(opc)
                 user = input("---------------------------------\nElige una opción:\n--> Piedra\n--> Papel\n--> Tijeras\n---------------------------------\n").upper()
                 if user == "PIEDRA" and env == "TIJERAS":
@@ -89,12 +88,20 @@ def menuP():
                     cntdr_pve['rnds_ge'] += 1
                     print(f"¡{env} corta {user}! No te preocupes, ¡a la siguiente lo conseguirás!\nMARCADOR: {cntdr_pve['rnds_gu']} - {cntdr_pve['rnds_ge']}")
                 elif user == env:
-                    print(f"¡Empate! Ambos elegimos lo mismo. ¡Parece que están en sintonía! ¿Vamos de nuevo?\nMARCADOR: {cntdr_pve['rnds_gu']} - {cntdr_pve['rnds_ge']}")
+                    print(f"¡Empate! Ambos elegimos lo mismo. ¡Parece que estamos en sintonía! ¿Vamos de nuevo?\nMARCADOR: {cntdr_pve['rnds_gu']} - {cntdr_pve['rnds_ge']}")
+                    vicConsEnv = 0
+                    vicConsUser = 0
                 elif user not in opc:
                     input("Elección no válida. Presiona Enter para regresar --> ")
             else: 
+                cntdr_pve['pts_user'] = 0
+                cntdr_pve['pts_env'] = 0
                 print(f"{users['name']} es el ganador" if cntdr_pve['rnds_gu'] > cntdr_pve['rnds_ge'] else "Entorno es el ganador")
-                break
+                retry = input("¿Desea volver a jugar? (Sí = Y / No = N): ")
+            #if retry == "Y":
+                #return
+            #else:
+                #break
             #input("Presiona Enter para regresar --> ")
             #retry = input("¿Desea jugar de nuevo? (Sí = Y / No = N): ").upper()
             #if retry != "Y":
