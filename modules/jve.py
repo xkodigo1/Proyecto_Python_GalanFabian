@@ -16,7 +16,7 @@ def JvE():
             'name' : rgstr_user
         }
         input("Usuario registrado con éxito. Presiona Enter para continuar --> ")
-        os.system("cls")
+        os.system("clear")
         vicConsUser = 0
         vicConsEnv = 0
         while True:
@@ -87,5 +87,5 @@ def JvE():
                 cntdr_pve['rnds_gu'] = 0
                 cntdr_pve['rnds_ge'] = 0
                 print(f"{users['name']} es el ganador." if cntdr_pve['rnds_gu'] > cntdr_pve['rnds_ge'] else "Entorno es el ganador.")
-                os.system('cls')
+                os.system('clear')
                 break

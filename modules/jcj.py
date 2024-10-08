@@ -14,7 +14,7 @@ def JcJ():
         rgstr_userD = input("Ingrese el nombre del jugador 2: ")
         data["users"].append(rgstr_userD)
         input("Usuarios registrados con éxito. Presiona Enter para continuar --> ")
-        os.system('cls')
+        os.system('clear')
         vicConsUserUno = 0
         vicConsUserDos = 0
         while True:
