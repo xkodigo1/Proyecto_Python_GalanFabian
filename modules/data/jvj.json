@@ -1,0 +1,89 @@
+{
+    "nickname_u_u": {
+        "victorias": 0,
+        "derrotas": 0,
+        "historial": [
+            {
+                "pepe": 3,
+                "carlos": 2,
+                "ganador": "pepe"
+            }
+        ]
+    },
+    "PEPE": {
+        "victorias": 1,
+        "derrotas": 1,
+        "historial": [
+            {
+                "PEPE": 3,
+                "CARLOS": 0,
+                "ganador": "PEPE"
+            },
+            {
+                "PEPE": 0,
+                "CARLOS": 3,
+                "ganador": "CARLOS"
+            }
+        ]
+    },
+    "CARLOS": {
+        "victorias": 1,
+        "derrotas": 1,
+        "historial": [
+            {
+                "CARLOS": 0,
+                "PEPE": 3,
+                "ganador": "PEPE"
+            },
+            {
+                "CARLOS": 3,
+                "PEPE": 0,
+                "ganador": "CARLOS"
+            }
+        ]
+    },
+    "PEPITO": {
+        "victorias": 1,
+        "derrotas": 0,
+        "historial": [
+            {
+                "PEPITO": 3,
+                "CARLITOS": 0,
+                "ganador": "PEPITO"
+            }
+        ]
+    },
+    "CARLITOS": {
+        "victorias": 0,
+        "derrotas": 1,
+        "historial": [
+            {
+                "CARLITOS": 0,
+                "PEPITO": 3,
+                "ganador": "PEPITO"
+            }
+        ]
+    },
+    "JULIAN": {
+        "victorias": 1,
+        "derrotas": 0,
+        "historial": [
+            {
+                "JULIAN": 3,
+                "PACO": 0,
+                "ganador": "JULIAN"
+            }
+        ]
+    },
+    "PACO": {
+        "victorias": 0,
+        "derrotas": 1,
+        "historial": [
+            {
+                "PACO": 0,
+                "JULIAN": 3,
+                "ganador": "JULIAN"
+            }
+        ]
+    }
+}

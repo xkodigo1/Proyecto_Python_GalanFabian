@@ -1,31 +1,31 @@
 import json
 import os 
 
-data_game = {
-    "JcJ" : {
-        "nickname_u_u" : {
-            "vic_user_u" : 0,
-            "def_user_u" : 0
-        },
-        "nickname_u_d" : {
-            "vic_user_d" : 0,
-            "def_user_d" : 0
-        },
-    "PvE" : {
-        "nickname_u" : {
-            "vic_user" : 0,
-            "def_user" : 0
-        },
-        "environment" : {
-            "vic_env" : 0,
-            "def_env" : 0
-        }
-    }
-    }
+# data_game = {
+#     "JcJ" : {
+#         "nickname_u_u" : {
+#             "vic_user_u" : 0,
+#             "def_user_u" : 0
+#         },
+#         "nickname_u_d" : {
+#             "vic_user_d" : 0,
+#             "def_user_d" : 0
+#         },
+#     "PvE" : {
+#         "nickname_u" : {
+#             "vic_user" : 0,
+#             "def_user" : 0
+#         },
+#         "environment" : {
+#             "vic_env" : 0,
+#             "def_env" : 0
+#         }
+#     }
+#     }
 
-}
-with open ("data/data_game.json" "w+") as file:
-    json.load(file, indent=4)
+# }
+# with open ("data/data_game.json" "w+") as file:
+#     json.load(file, indent=4)
     
 
 

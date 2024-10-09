@@ -1,0 +1,92 @@
+{
+    "CARLOS": {
+        "victorias": 0,
+        "derrotas": 0,
+        "historial": [
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 4,
+                "ganador": "enviroment"
+            }
+        ]
+    },
+    "environment": {
+        "victorias": 2,
+        "derrotas": 3,
+        "historial": [
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 4,
+                "ganador": "enviroment"
+            },
+            {
+                "puntos_favor": 1,
+                "puntos_contrincante": 3,
+                "ganador": "PEPE"
+            },
+            {
+                "puntos_favor": 1,
+                "puntos_contrincante": 3,
+                "ganador": "PEPE"
+            },
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 2,
+                "ganador": "environment"
+            },
+            {
+                "puntos_favor": 1,
+                "puntos_contrincante": 3,
+                "ganador": "KODIGO"
+            },
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 2,
+                "ganador": "environment"
+            }
+        ]
+    },
+    "PEPE": {
+        "victorias": 2,
+        "derrotas": 1,
+        "historial": [
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 1,
+                "ganador": "PEPE"
+            },
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 1,
+                "ganador": "PEPE"
+            },
+            {
+                "puntos_favor": 2,
+                "puntos_contrincante": 3,
+                "ganador": "environment"
+            }
+        ]
+    },
+    "KODIGO": {
+        "victorias": 1,
+        "derrotas": 0,
+        "historial": [
+            {
+                "puntos_favor": 3,
+                "puntos_contrincante": 1,
+                "ganador": "KODIGO"
+            }
+        ]
+    },
+    "FABIAN PRUEBA": {
+        "victorias": 0,
+        "derrotas": 1,
+        "historial": [
+            {
+                "puntos_favor": 2,
+                "puntos_contrincante": 3,
+                "ganador": "environment"
+            }
+        ]
+    }
+}
